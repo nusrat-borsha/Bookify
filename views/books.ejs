@@ -15,7 +15,7 @@
         <section>
             <div class="container">
                  <div class="header">
-                    <a href="#"><img class="logo" src="logo.svg"></a>
+                    <a class="logo-link" href="\"><img class="logo" src="img/logo.svg"></a>
                     <a href="/"><button class="search-btn">Search again</button></a>
                  </div>
                  <div class="">
@@ -24,10 +24,15 @@
                         <%  data["items"].forEach(function(book){ %>
                          <li><a href="<%= book["volumeInfo"].previewLink %>">
                              <div class="book-info">
-                                <div>Title: <%= book["volumeInfo"].title %></div>
-                                <div>Authors: <%= book["volumeInfo"].authors %></div>
-                                <div>Published Date: <%= book["volumeInfo"].publishedDate %></div>
-                             
+                                <div class="info-container">
+                                    <img class="icon-img" src="img/reshot-icon-books-XCG3EJ45V6.svg">&nbsp;<strong>Title</strong>: <%= book["volumeInfo"].title %>
+                                </div>
+                                <div class="info-container">
+                                    <img class="icon-img" src="img/reshot-icon-people-collective-GLYF46DNKR.svg">&nbsp;<strong>Authors</strong>: <%= book["volumeInfo"].authors %>
+                                </div>
+                                <div class="info-container">
+                                    <img class="icon-img" src="img/reshot-icon-date-F7CUN5MS4T.svg">&nbsp;<strong>Published Date</strong>: <%= book["volumeInfo"].publishedDate %>
+                                </div>
                         <%  })  %>
                              </div>
                             </a>

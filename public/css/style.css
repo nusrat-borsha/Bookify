@@ -9,9 +9,19 @@ body{
 }
 
 .body{
-   background: #654ea3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #654ea3;  
+background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  
+background: linear-gradient(to right, #eaafc8, #654ea3); 
+}
+
+.homepage-logo{
+   width: 10rem;
+   padding: 1rem;
+}
+
+.logo-link {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .container{
@@ -57,24 +67,43 @@ background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, F
    height: auto;
 }
 
-
-
 .list-container li{
        display: flex;
        flex-direction: column;
-       width: 197px;
+       width: 90%;
        height: auto;
        background-color: #fff;
-       margin: 1rem;
+       border-radius: 3px;
        list-style: none;
+       padding:  0.5rem;
+       margin: 1rem;
+       box-shadow:
+       0 2.8px 2.2px rgba(0, 0, 0, 0.022),
+       0 6.7px 5.3px rgba(0, 0, 0, 0.034),
+       0 12.5px 10px rgba(0, 0, 0, 0.06),
+       0 22.3px 17.9px rgba(0, 0, 0, 0.045),
+       0 41.8px 33.4px rgba(0, 0, 0, 0.056),
+       0 100px 80px rgba(0, 0, 0, 0.12)
 }
 
-.book-img{
-   width: 197px;
-   height: 15rem;
-   background-color: rgb(207, 44, 44);
+.list-container a:link,
+.list-container a:visited{
+   text-decoration: none;
+   color: #000;
 }
 
+.icon-img{
+   width: 2rem;
+}
+
+.book-info{
+   display: flex;
+   flex-direction: column;
+}
+
+.info-container{
+   padding: 1rem 0.5rem 1rem 0.5rem;
+}
 /*--HOME PAGE--*/
 
 .grid-of-2{
@@ -105,12 +134,12 @@ background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, F
  .search-form button{
      width: 15%;
      height: 2.2rem;
-     background-color: #7ed6df; 
-     border: 1px solid  #7ed6df;
+     background-color: #f76c9a;
+     border: 1px solid  #f76c9a;
      border-top-right-radius: 2rem;
      border-bottom-right-radius: 2rem;
      margin-left:-10%;
-     color: #000;
+     color: #fff;
      cursor: pointer;
  }
 
@@ -121,6 +150,13 @@ background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, F
    color: #fff;
  }
  
+
+ input:focus,
+ select:focus,
+ textarea:focus,
+ button:focus {
+     outline: none;
+ }
 
 
 

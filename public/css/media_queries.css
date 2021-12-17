@@ -1,8 +1,51 @@
-@media (max-width: 42em){
+
+
+@media (max-width: 58em){
+
+    .list-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 45em){
 
     .list-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 39em){
+    
+    .search-form button{
+        width: 25%;
+        height: 2.2rem;
+        background-color: #f76c9a;
+        border: 1px solid  #f76c9a;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        margin-left:-10%;
+        color: #fff;
+        cursor: pointer;
+    }
+   
+    .heading{
+      margin-top: 20%;
+      margin-left: 10%;
+      font-size: 120%;
+      color: #fff;
+    }
+}
+
+@media (max-width: 31em){
+
+    .list-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
         height: auto;
     }
