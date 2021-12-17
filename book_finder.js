@@ -3,7 +3,8 @@ const express   = require("express"),
     app         = express(),     
     app.use(express.static("public"));
     app.set("view engine", "ejs");
-
+let i=0;
+let flag=0;
 app.get("/", function(req, res){ 
     res.render("index.ejs");
 }
@@ -14,7 +15,11 @@ app.get("/book", (req, res) => {
     axios('https://www.googleapis.com/books/v1/volumes?q='+keywords)
     .then((response)=> {
         if(response.status==200){
-            res.render("books", {data : response.data}); //data.items
+            
+            res.render("books", 
+            {
+                data : response.data,
+            }); 
         }
       })
 

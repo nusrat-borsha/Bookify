@@ -1,0 +1,128 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+   background-color: #c6ade7;
+}
+
+.body{
+   background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container{
+   width:80%;
+   margin-left: 10%;
+   margin-right: auto;
+   margin-top: 5%;
+   background-color: rgb(233, 230, 230);
+   height: auto;
+   border-radius:0.5rem;
+   box-shadow: 0 0 0.5;
+}
+
+.logo{
+   width:5rem;
+}
+
+.header{
+   background-color: #fff;
+   height: 5rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 1rem;
+}
+
+.search-btn{
+   text-decoration: none;
+   border: 1px solid #f76c9a;
+   background-color: #f76c9a;
+   border-radius: 2rem;
+   padding: 0.5rem 1rem;
+   margin-left: 2rem;
+   color: #fff;
+   cursor: pointer;
+}
+
+
+.list-container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   width: 100%;
+   height: auto;
+}
+
+
+
+.list-container li{
+       display: flex;
+       flex-direction: column;
+       width: 197px;
+       height: auto;
+       background-color: #fff;
+       margin: 1rem;
+       list-style: none;
+}
+
+.book-img{
+   width: 197px;
+   height: 15rem;
+   background-color: rgb(207, 44, 44);
+}
+
+/*--HOME PAGE--*/
+
+.grid-of-2{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+
+
+.illustrate-pic{
+   width: 80%;
+   height: auto;
+   margin: 1rem;
+}
+
+
+
+.search-form input[type=text]{
+   width: 60%;
+   height: 2.2rem;
+   margin-left: 10%;
+   margin-top: 2rem;
+   border-top-left-radius: 2rem;
+   border-bottom-left-radius: 2rem;
+   border: 1px solid #fff;
+   text-indent: 1rem;
+ }
+ 
+ .search-form button{
+     width: 15%;
+     height: 2.2rem;
+     background-color: #7ed6df; 
+     border: 1px solid  #7ed6df;
+     border-top-right-radius: 2rem;
+     border-bottom-right-radius: 2rem;
+     margin-left:-10%;
+     color: #000;
+     cursor: pointer;
+ }
+
+ .heading{
+   margin-top: 20%;
+   margin-left: 10%;
+   font-size: 250%;
+   color: #fff;
+ }
+ 
+
+
+
+
+     
