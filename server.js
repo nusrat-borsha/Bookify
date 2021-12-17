@@ -29,6 +29,7 @@ app.get("/book", (req, res) => {
 }
 )
 
-app.listen(5000, function(){  //http://127.0.0.1:5000
+const port = process.env.PORT || 5000
+app.listen(port, function(){  //http://127.0.0.1:5000
     console.log("Server has started!!");
 })
