@@ -1,10 +1,11 @@
-const express   = require("express"),
-    axios       = require('axios')
-    app         = express(),     
-    app.use(express.static("public"));
-    app.set("view engine", "ejs");
-let i=0;
-let flag=0;
+const express   = require("express");
+const axios = require('axios');
+const app = express();   
+
+    
+app.use(express.static("public"));
+app.set("view engine", "ejs");
+
 app.get("/", function(req, res){ 
     res.render("index.ejs");
 }
